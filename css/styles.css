@@ -1,0 +1,118 @@
+/* Globals */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+header .title h1 {
+  font-family: "PT Serif", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.who h2 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.who p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+/* Gallery */
+
+.gallery {
+  padding-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    padding-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+.gallery .vertical-text {
+  font-family: "PT Serif", serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.gallery .name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.image-container {
+  position: relative;
+}
+
+.position {
+  position: absolute;
+  top: 0;
+  right: -5;
+  writing-mode: vertical-lr;
+}
+
+/* footer */
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 8rem;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+footer span {
+  font-weight: 700;
+}
